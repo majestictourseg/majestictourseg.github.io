@@ -8,16 +8,23 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-yHapQdLxKAYx7U6NH3P+59vGoxY0Yp+ph6Fd2GpXn+F1OxEGUddEF3uS1GwYGkX0Ml7mO3XbIXv9C8WaUKUR9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <style>
-    body {
+    html, body {
       margin: 0;
       padding: 0;
+      height: 100%;
       font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+    }
+
+    body {
+      background: url('Logo%20pic.png') no-repeat center center;
+      background-size: contain; /* Keep logo aspect ratio */
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
       display: flex;
       align-items: center;
       justify-content: center;
       min-height: 100vh;
-      background: url('Logo%20pic.png') no-repeat center center fixed;
-      background-size: cover;
     }
 
     .card {
