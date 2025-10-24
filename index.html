@@ -17,7 +17,7 @@
 
     body {
       background: url('Logo%20pic.png') no-repeat center center;
-      background-size: contain; /* Keep logo aspect ratio */
+      background-size: contain;
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-position: center;
@@ -58,12 +58,19 @@
       border-radius: 8px;
       font-size: 16px;
       color: white;
-      background-color: #4267B2; /* Facebook blue */
       transition: background 0.3s ease;
+    }
+
+    a.facebook {
+      background-color: #4267B2;
     }
 
     a.instagram {
       background-color: #E1306C;
+    }
+
+    a.whatsapp {
+      background-color: #25D366;
     }
 
     a:hover {
@@ -81,11 +88,14 @@
   <div class="card">
     <h1>Connect with Us</h1>
     <div class="links">
-      <a href="https://www.facebook.com/Majestictourseg" target="_blank" rel="noopener">
+      <a href="https://www.facebook.com/Majestictourseg" class="facebook" target="_blank" rel="noopener">
         <i class="fab fa-facebook"></i> Facebook
       </a>
       <a href="https://www.instagram.com/majestictourseg/" class="instagram" target="_blank" rel="noopener">
         <i class="fab fa-instagram"></i> Instagram
+      </a>
+      <a href="https://wa.me/201055610232" class="whatsapp" target="_blank" rel="noopener">
+        <i class="fab fa-whatsapp"></i> WhatsApp
       </a>
     </div>
     <footer>Follow us for updates</footer>
